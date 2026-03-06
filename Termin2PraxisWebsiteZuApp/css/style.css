@@ -1,0 +1,157 @@
+/* Termin2Praxis - Custom Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Login-Seite */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tabellen */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 12px;
+    font-weight: 500;
+}
+
+/* Formulare */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .filter-section {
+        padding: 15px;
+    }
+    
+    .filter-chip {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        margin: 3px;
+    }
+    
+    .kategorie-title {
+        font-size: 1rem;
+    }
+    
+    .search-box {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .praxis-badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+}
+
+/* Animationen */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,.15);
+}
+
+.btn {
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+/* Hero Section */
+.display-3 {
+    color: #0d6efd;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Termin Cards */
+.card.h-100 {
+    transition: all 0.3s ease;
+}
+
+.card.h-100:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.2);
+}
+
+/* Delete Button Hover Effects */
+.btn-link.text-danger:hover {
+    background-color: rgba(220, 53, 69, 0.1) !important;
+    transform: scale(1.1);
+}
+
+.modal-footer .btn-danger:hover svg {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+}
